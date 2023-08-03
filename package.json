@@ -1,0 +1,29 @@
+{
+    "name": "discord-ts-handler",
+    "version": "1.0.0",
+    "description": "A open-source discord bot handler made with typescript and discord.js",
+    "main": "build/index.js",
+    "repository": "https://github.com/SynthCoreHQ/ochako.git",
+    "author": "bugsum <devinsane.79@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "node .",
+        "test": "nodemon .",
+        "build": "tsc",
+        "deploy": "node build/deploy.js"
+    },
+    "dependencies": {
+        "discord.js": "^14.12.1",
+        "dotenv": "^16.3.1",
+        "module-alias": "^2.2.3"
+    },
+    "devDependencies": {
+        "@types/node": "^20.4.5",
+        "nodemon": "^3.0.1",
+        "typescript": "^5.1.6"
+    },
+    "_moduleAliases": {
+        "root": "build/",
+        "utils": "build/utils/index"
+    }
+}
